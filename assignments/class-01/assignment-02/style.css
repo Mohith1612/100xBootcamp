@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter, sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  flex: 1;
+  background: #16171a;
+  color: white;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left strong {
+  opacity: 0.9;
+}
+
+.left h1 {
+  font-size: 42px;
+  margin: 24px 0;
+}
+
+.left ul {
+  list-style: none;
+}
+
+.left li {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: #9aa0a6;
+}
+
+.left li::before {
+  color: white;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+form {
+  width: 100%;
+  max-width: 650px;
+}
+
+form h2 {
+  font-size: 32px;
+}
+
+form p {
+  color: #6b7280;
+  margin: 8px 0 32px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 18px 18px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 24px;
+}
+
+button {
+  padding: 12px 22px;
+  border-radius: 100px;
+  border: none;
+  background: #6b7280;
+  color: white;
+}
+
+form > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form > div div {
+  display: flex;
+  gap: 8px;
+}
+
+form span {
+  width: 36px;
+  height: 4px;
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+.active {
+  background: #111827;
+}
